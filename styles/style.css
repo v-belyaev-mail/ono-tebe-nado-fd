@@ -90,7 +90,6 @@ section.cover {
     position: relative;
     padding: 165px 50px 50px 50px;
     width: 100%;
-    min-height: 500px;
     display: flex;
     flex-direction: column;
     gap: 106px;
@@ -152,7 +151,7 @@ section.cover {
     color: var(--otn-additional-text-color);
     padding: 12px 32px 11px 31px;
     background: transparent;
-    border: 1px solid var(--otn-additional-text-color);
+    border: 1px solid currentColor;
     outline: none;
     text-transform: uppercase;
     font-weight: 500;
@@ -260,17 +259,17 @@ section.about {
     background: #000;
 }
 
-section.about article.about__column {
+section.about .about__column.about__column_info {
     margin-top: 140px;
 }
 
-article.about__column h2 {
+.about__column.about__column_info h2 {
     text-transform: uppercase;
     margin-bottom: 100px;
     line-height: 1.1;
 }
 
-article.about__column .paragraphs {
+.about__column.about__column_info .paragraphs {
     line-height: 1.2;
     font-size: 20px;
     display: inline-flex;
@@ -279,11 +278,10 @@ article.about__column .paragraphs {
 }
 
 .footer {
-    padding: 0 50px;
+    padding: 0 50px 82px 50px;
     margin-top: 180px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 180px;
 }
 
 .footer_address.address {
